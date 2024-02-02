@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+    background-color: hsl(212, 23%, 69%);
+}
+
+.card{
+    margin: 200px 270px;
+    display: flex;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.drawers{
+    height: 300px;
+}
+
+.box2{
+    padding: 0 30px;
+    background-color: white;
+}
+
+.profile{
+    display: flex;
+}
+
+.profile-image{
+    height: 60px;
+    border-radius: 50%;
+}
+
+.heading{
+    color:hsl(217, 19%, 35%);
+    width: 88%;
+    font-weight: 700;
+}
+
+.paragraph{
+    line-height: 25px;
+    color: hsl(214, 17%, 51%);
+}
+
+.profile{
+    margin-top: 10px;
+}
+
+.user{
+    padding: 10px 0; 
+}
+
+p{
+    margin: 0;
+}
+
+.name{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.date{
+    margin-left: 10px;
+    color: hsl(214, 17%, 51%);
+}
+
+.share{
+    height: 20px;
+    width: 20px;
+    margin-left: 180px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    cursor: pointer;
+}
+
+.facebook,.pinterest,.twitter{
+    margin-left: 10px;
+}
+
+.social-media{
+    position: absolute;
+    top: 360px;
+    right: 250px;
+    background-color: hsl(217, 19%, 35%);
+    padding: 15px 25px;
+    display: flex;
+    text-transform: uppercase;
+    color: hsl(212, 23%, 69%);
+    border-radius: 15px;
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    .card {
+        margin: 20px;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally in the column */
+    }
+
+    .drawers {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+
+    .box2 {
+        padding: 20px;
+        box-sizing: border-box; /* Ensure padding is included in the width */
+        width: 100%; /* Occupy full width */
+    }
+
+    .profile {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally in the column */
+    }
+
+    .name,
+    .date {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .share {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .social-media {
+        top: 10px;
+        right: 10px;
+    }
+}
